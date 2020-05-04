@@ -1,0 +1,31 @@
+.portfolio {
+  margin: 20px 0;
+  display: flex;
+
+  h3 {
+    margin: 8px 0 0;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .image {
+    width: 60px;
+    padding-right: 15px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .text {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: $size-sm) {
+
+  .portfolio {
+    margin: 0 0 10px;
+  }
+
+}

@@ -1,0 +1,80 @@
+.ce_form {
+  .widget:not(.widget-checkbox):not(.widget-radio) {
+    @extend .form-group;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+form.contact-form {
+  padding: 40px;
+}
+
+.ce_form + .ce_wrapper {
+  padding-left: 40px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.form-group {
+  label:not(.form-checkbox):not(.form-radio) {
+    @extend .form-label;
+  }
+
+  input {
+    @extend .form-input;
+  }
+
+  select {
+    @extend .form-select;
+  }
+}
+
+.form-label {
+  font-weight: 700;
+  padding: 0 0 3px;
+  color: #202124;
+}
+
+.form-input {
+  height: 50px;
+  border: 2px solid #EBEDED;
+
+  &:focus {
+    border: 2px solid #EBEDED;
+    box-shadow: none;
+  }
+}
+
+.form-select {
+  height: 50px;
+  border: 2px solid #EBEDED;
+  color: #A6ADB4;
+
+  &:focus {
+    border: 2px solid #EBEDED;
+    box-shadow: none;
+  }
+}
+
+.submit {
+  @extend .btn;
+  margin-top: 40px;
+}
+
+@media (max-width: $size-lg) {
+
+  .ce_form+.ce_wrapper {
+    padding-left: 20px;
+  }
+
+  form.contact-form {
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+}

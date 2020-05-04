@@ -1,0 +1,35 @@
+.ce_ct_teaserBox.convert {
+  margin-bottom: 30px;
+
+  h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .inside {
+    box-shadow: 3px 3px 6px rgba(0,0,0,.16);
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+
+  img {
+    vertical-align: bottom;
+    width: 100%;
+  }
+
+  p {
+    color: #A6A6A6;
+  }
+
+  .text {
+    padding: 40px;
+  }
+}
+
+@media (max-width: $size-lg) {
+
+  .ce_ct_teaserBox.convert .text {
+    padding: 20px;
+  }
+
+}
