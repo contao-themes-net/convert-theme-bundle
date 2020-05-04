@@ -1,52 +1,52 @@
-.be_zeroonetheme_setup .left {
+.be_converttheme_setup .left {
     width: 60%;
     float: left;
 }
 
-.be_zeroonetheme_setup .right {
+.be_converttheme_setup .right {
     width: 40%;
     float: right;
 }
 
-.be_zeroonetheme_setup .right .inner {
+.be_converttheme_setup .right .inner {
     padding: 30px 0 30px 15px;
 }
 
-.be_zeroonetheme_setup .left .inner {
+.be_converttheme_setup .left .inner {
     padding: 30px 15px 30px 0;
 }
 
-.be_zeroonetheme_setup h2 {
+.be_converttheme_setup h2 {
     margin-bottom: 15px;
 }
 
-.be_zeroonetheme_setup img.logo {
+.be_converttheme_setup img.logo {
     width: 150px;
     height: auto;
     margin-bottom: 15px;
 }
 
-.be_zeroonetheme_setup .link-list a {
+.be_converttheme_setup .link-list a {
     padding: 5px 0;
     display: inline-block;
 }
 
-.be_zeroonetheme_setup a {
+.be_converttheme_setup a {
     color: #000;
 }
 
-.be_zeroonetheme_setup a:hover {
+.be_converttheme_setup a:hover {
     color: #333;
 }
 
-.be_zeroonetheme_setup .button a {
-    background: #000;
+.be_converttheme_setup .button a {
+    background: #F37920;
     color: #fff;
     padding: 15px;
     display: inline-block;
     margin: 5px 0 15px;
 }
 
-.be_zeroonetheme_setup .button a:hover {
-    background: #ff8562 ;
+.be_converttheme_setup .button a:hover {
+    background: #000 ;
 }
