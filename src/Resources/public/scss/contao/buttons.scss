@@ -1,3 +1,13 @@
+div.btn {
+  padding: 0;
+
+  a {
+    padding: 22px 20px;
+    color: $light-color;
+    display: block;
+  }
+}
+
 .btn {
   border-radius: $border-radius;
   padding: 22px 20px;

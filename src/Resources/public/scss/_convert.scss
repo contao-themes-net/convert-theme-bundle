@@ -84,7 +84,11 @@ footer {
   overflow: hidden;
 
   a, a:visited {
-    color: $footer-color-1;
+    color: $primary-color;
+
+    &:hover {
+      color: $link-color-dark;
+    }
   }
 
   .mod_article {

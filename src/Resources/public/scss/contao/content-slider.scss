@@ -46,15 +46,20 @@
         content: "➜";
         position: absolute;
         text-indent: 0;
-        color: $body-font-color;
+        color: $primary-color;
         font-size: 20px;
-        border: 2px solid $body-font-color;
+        border: 2px solid $primary-color;
         border-radius: 100%;
         width: 30px;
         height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      &:hover:before {
+        color: $link-color-dark;
+        border-color: $link-color-dark;
       }
     }
 
