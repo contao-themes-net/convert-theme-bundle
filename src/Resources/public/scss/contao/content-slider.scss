@@ -75,6 +75,11 @@
       right: 60px;
     }
   }
+
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 750px) {

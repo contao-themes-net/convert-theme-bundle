@@ -61,8 +61,16 @@
 
 @media (max-width: $size-sm) {
 
-  .ce_gallery .image_container {
-    padding: 5px;
+  .ce_gallery {
+    .cols_3, .cols_4, .cols_5, .cols_6, .cols_7, .cols_8, .cols_9, .cols_10, .cols_11, .cols_12 {
+      li {
+        width: 100%;
+      }
+    }
+
+    .image_container {
+      padding: 15px;
+    }
   }
 
 }
