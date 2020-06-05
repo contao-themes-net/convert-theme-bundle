@@ -19,36 +19,36 @@
   <?php if($GLOBALS['og:image:height']) echo '<meta property="og:image:height" content="'.$GLOBALS['og:image:height'].'" />'; ?>
 
   <link rel="shortcut icon" href="files/convert/img/favicon.ico" type="image/x-icon"/>
-<?php $this->endblock(); ?>
 
-<?php $this->block('body'); ?>
-  <?php $this->parent(); ?>
+  <?php // @todo write class for this funtions
+    $scssStr = '';
+    $hash = hash('ripemd160', implode(" ,",$GLOBALS['CONVERT_STYLES']));
+    $file = new \File('var/cache/convert/scss/' . $hash . '.scss');
 
-<?php // @todo write class for this funtions
-  $scssStr = '';
-  $hash = hash('ripemd160', implode(" ,",$GLOBALS['CONVERT_STYLES']));
-  $file = new \File('var/cache/convert/scss/' . $hash . '.scss');
+    // add 0.1 to end of array
+    $GLOBALS['CONVERT_STYLES'][] = '_convert';
+    $GLOBALS['CONVERT_STYLES'] = array_unique($GLOBALS['CONVERT_STYLES']);
 
-  // add 0.1 to end of array
-  $GLOBALS['CONVERT_STYLES'][] = '_convert';
-  $GLOBALS['CONVERT_STYLES'] = array_unique($GLOBALS['CONVERT_STYLES']);
+    foreach($GLOBALS['CONVERT_STYLES'] as $style) {
+      $scssStr .= '@import "../../../../web/bundles/contaothemesnetconverttheme/scss/' . $style . '.scss";' . "\n";
+    }
+    \File::putContent($file->path, $scssStr);
 
-  foreach($GLOBALS['CONVERT_STYLES'] as $style) {
-    $scssStr .= '@import "../../../../web/bundles/contaothemesnetconverttheme/scss/' . $style . '.scss";' . "\n";
-  }
-  \File::putContent($file->path, $scssStr);
+  ?>
 
-?>
-
-<link rel="stylesheet" type="text/css" media="all" href="<?php
-          // add stylesheets
-          $combiner = new Combiner();
-          $combiner->add($file->path);
-          echo $combiner->getCombinedFile(); ?>">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php
+            // add stylesheets
+            $combiner = new Combiner();
+            $combiner->add($file->path);
+            echo $combiner->getCombinedFile(); ?>">
 
   <?= $this->stylesheets ?>
 
   <?= $this->head ?>
+<?php $this->endblock(); ?>
+
+<?php $this->block('body'); ?>
+  <?php $this->parent(); ?>
 
   <?= $this->mooScripts ?>
   <?= $this->framework ?>
