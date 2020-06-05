@@ -184,6 +184,23 @@ img {
   float: left;
 }
 
+#kontakt {
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 961px) {
+  #kontakt {
+    h2, h3, h4, h5, h6 {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .mod_article {
   max-width: $article-width;
   padding: $article-padding;
