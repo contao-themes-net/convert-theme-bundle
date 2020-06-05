@@ -31,14 +31,6 @@ div.btn {
     }
   }
 
-  &:hover {
-    background: $primary-color-dark;
-  }
-
-  &.btn-link:hover {
-    color: $light-color;
-  }
-
   &.btn-sm {
     padding: 5px 30px;
   }

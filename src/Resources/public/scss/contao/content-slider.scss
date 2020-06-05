@@ -46,9 +46,9 @@
         content: "➜";
         position: absolute;
         text-indent: 0;
-        color: $primary-color;
+        color: $body-font-color;
         font-size: 20px;
-        border: 2px solid $primary-color;
+        border: 2px solid $body-font-color;
         border-radius: 100%;
         width: 30px;
         height: 30px;
@@ -58,8 +58,8 @@
       }
 
       &:hover:before {
-        color: $link-color-dark;
-        border-color: $link-color-dark;
+        color: $primary-color;
+        border-color: $primary-color-dark;
       }
     }
 

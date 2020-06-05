@@ -41,8 +41,12 @@
     vertical-align: bottom;
   }
 
-  li:before {
-    display: none;
+  li {
+    justify-content: center;
+
+    &:before {
+      display: none;
+    }
   }
 
   ul {
