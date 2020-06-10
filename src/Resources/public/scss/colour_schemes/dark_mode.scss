@@ -1,0 +1,38 @@
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: #212121 !important;
+    color: #e0e0e0 !important;
+  }
+
+  #wrapper {
+    .bg-gray, .bg-secondary {
+      &, &:before, &:after {
+        background: #353535 !important;
+      }
+    }
+
+    .ce_sliderStart .slider-control .slider-prev:before, .ce_sliderStart .slider-control .slider-next:before {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .form-input, .form-group input, .ce_form .widget:not(.widget-checkbox):not(.widget-radio) input,
+    .form-select:not([multiple]):not([size]), .form-group select:not([multiple]):not([size]),
+    .ce_form .widget:not(.widget-checkbox):not(.widget-radio) select:not([multiple]):not([size]) {
+      background: #272727;
+      border: #272727;
+      color: #fff;
+    }
+
+    .form-label, .form-group label:not(.form-checkbox):not(.form-radio), .ce_form .widget:not(.widget-checkbox):not(.widget-radio) label:not(.form-checkbox):not(.form-radio) {
+      color: #fff;
+    }
+
+    .ce_ct_teaserBox.convert .inside {
+      background: #272727;
+      color: #fff;
+    }
+  }
+
+}

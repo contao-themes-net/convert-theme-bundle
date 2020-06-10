@@ -2,7 +2,6 @@
 $version: "0.5.8";
 
 @import 'contao/fonts';
-@import '../../../../files/convert/scss/_custom_variables.scss';
 
 // Core features
 $rtl: false !default;
@@ -124,3 +123,5 @@ $footer-background_1: #58595B !default;
 $footer-color-1: #F2F2F2 !default;
 $article-width: 1180px !default;
 $article-padding: 60px 20px !default;
+
+@import '../../../../files/convert/scss/_custom_variables.scss';
