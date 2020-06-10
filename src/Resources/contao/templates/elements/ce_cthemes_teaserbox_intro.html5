@@ -10,7 +10,8 @@ $bgImage = $this->singleSRC;
 
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
     <div class="image">
-        <div<?php if ($this->addImage): ?> style="background-image: url('<?= $bgImage ?>')"<?php endif; ?>></div>
+        <!--<div<?php if ($this->addImage): ?> style="background-image: url('<?= $bgImage ?>')"<?php endif; ?>></div>-->
+        <div><?php $this->insert('image', $this->arrData); ?></div>
     </div>
     <div class="inside">
         <?php $this->block('content'); ?>

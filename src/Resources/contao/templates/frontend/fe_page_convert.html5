@@ -42,13 +42,15 @@
             $combiner->add($file->path);
             echo $combiner->getCombinedFile(); ?>">
 
-  <?= $this->stylesheets ?>
+
 
   <?= $this->head ?>
 <?php $this->endblock(); ?>
 
 <?php $this->block('body'); ?>
   <?php $this->parent(); ?>
+
+  <?= $this->stylesheets ?>
 
   <?= $this->mooScripts ?>
   <?= $this->framework ?>
