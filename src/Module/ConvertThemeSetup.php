@@ -15,6 +15,7 @@ class ConvertThemeSetup extends \BackendModule
     {
         switch (\Input::get('act')) {
             case 'syncFolder':
+                $this->Template->version = ConvertThemeSetup::VERSION;
                 $path = TL_ROOT . '/web/bundles/contaothemesnetconverttheme';
                 if(!file_exists("files/convert")) {
                     new \Folder("files/convert");
@@ -24,6 +25,7 @@ class ConvertThemeSetup extends \BackendModule
                 $this->Template->message = true;
                 break;
             case 'truncateTlFiles':
+                $this->Template->version = ConvertThemeSetup::VERSION;
                 $this->import('Database');
                 $this->Database->prepare("TRUNCATE tl_files")->execute();
                 $this->Template->messageTruncate = true;
