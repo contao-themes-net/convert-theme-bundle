@@ -46,7 +46,7 @@ body:not(.home) header {
     width: 100%;
 
     &:hover {
-      color: #fff;
+      color: $light-color;
       background: $primary-color-dark;
     }
   }

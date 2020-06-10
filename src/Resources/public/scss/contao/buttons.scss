@@ -23,6 +23,11 @@ div.btn {
   -webkit-transition: background .2s;
   font-size: 22px;
 
+  &:hover {
+    background: $primary-color-dark;
+    color: $light-color;
+  }
+
   &:not(.btn-primary):not(.btn-link):not(.btn-success):not(.btn-error):visited {
     color: $light-color;
 
@@ -42,6 +47,10 @@ div.btn {
   &.btn-block {
     display: flex;
     justify-content: center;
+  }
+
+  &.btn-link:hover {
+    color: $light-color;
   }
 }
 
