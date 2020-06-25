@@ -6,7 +6,7 @@ The theme is based on current best practice methods for building landing pages w
  
 CONVERT is also high-performance due to short loading times & lightweight code and of course responsive, i.e. optimized for all devices and common browsers. The theme is ready to use immediately, because it concentrates on important conversion elements (like header image + headline, lists, teaser boxes, quote sliders, buttons & contact form) and delivers them ready-made.
  
-CONVERT is clever, performant and target-oriented - perfect for high-conversion landing pages that turn prospects into paying customers.
+**CONVERT is clever, performant and target-oriented - perfect for high-conversion landing pages that turn prospects into paying customers.**
 
 --- german ---
 
@@ -16,7 +16,7 @@ Das Theme setzt auf aktuelle Best Practice Methoden beim Aufbau conversionstarke
 
 CONVERT ist zudem performancestark durch geringe Ladezeiten & leichtgewichtigen Code und natürlich responsive, d.h. für alle Endgeräte und gängigen Browser optimiert. Das Theme ist sofort einsatzbereit, denn es konzentriert sich auf wichtige Conversion Elemente (wie z.B. Headerbild + Überschrift, Listen, Teaserboxen, Zitat-Slider, Buttons & Kontaktformular) und liefert diese vorgefertigt mit.
 
-CONVERT ist clever, performant und zielgerichtet - perfekt für conversionstarke Landingpages, die Interessenten zu zahlenden Kunden machen.
+**CONVERT ist clever, performant und zielgerichtet - perfekt für conversionstarke Landingpages, die Interessenten zu zahlenden Kunden machen.**
 
 ## license
 
