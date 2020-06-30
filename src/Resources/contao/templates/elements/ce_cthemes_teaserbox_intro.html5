@@ -37,3 +37,10 @@ $bgImage = $this->singleSRC;
 
 <?php $GLOBALS['CONVERT_STYLES'][] = '_buttons'; ?>
 <?php $GLOBALS['CONVERT_STYLES'][] = 'contao/buttons'; ?>
+
+<?php $GLOBALS['TL_BODY'][] = '
+<script>
+if( document.querySelector(".intro .ce_ct_teaserBox + .ce_image") !== null ) {
+    document.querySelector(".intro")
+}
+</script>'; ?>
