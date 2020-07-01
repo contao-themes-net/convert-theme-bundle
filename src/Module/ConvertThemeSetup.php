@@ -46,7 +46,7 @@ class ConvertThemeSetup extends \BackendModule
                         $objFile = new \File("web/bundles/".substr($path,$pos)."/".$dir, true);
                         $objFile->copyTo($filesFolder);
                     }
-                } else if(strpos($filesFolder,"/img/") !== false || strpos($filesFolder,"/css/") !== false || strpos($filesFolder,".public") !== false) {
+                } else if(strpos($filesFolder,"/img/") !== false || strpos($filesFolder,"/app/") !== false || strpos($filesFolder,"/css/") !== false || strpos($filesFolder,".public") !== false) {
                     if(!file_exists(TL_ROOT."/".$filesFolder)) {
                         $objFile = new \File("web/bundles/".substr($path,$pos)."/".$dir, true);
                         $objFile->copyTo($filesFolder);
