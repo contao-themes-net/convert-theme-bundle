@@ -1,5 +1,5 @@
-::-moz-selection { background: $primary-color-dark; color: #fff; }
-::selection { background: $primary-color-dark; color: #fff; }
+::-moz-selection { background: $primary-color; color: #fff; }
+::selection { background: $primary-color; color: #fff; }
 
 html, body {
   scroll-behavior: smooth;
@@ -283,6 +283,13 @@ ul {
 
 /* Intro */
 
+.mod_article.intro {
+  &.left-image, &.right-image {
+    padding: 0 50px;
+    flex-wrap: inherit;
+  }
+}
+
 .intro {
   min-height: 100vh;
   display: flex;
@@ -290,7 +297,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 
-  /*&.right-image {
+  &.right-image {
     .ce_ct_teaserBox, .ce_image {
       width: inherit;
     }
@@ -310,7 +317,15 @@ ul {
     .ce_image {
       padding-right: 50px;
     }
-  }*/
+  }
+
+  &.image-overflow {
+    margin-bottom: 100px;
+
+    > .ce_image {
+      margin-bottom: -200px;
+    }
+  }
 
   > .ce_image {
     width: 100%;
@@ -328,7 +343,6 @@ ul {
 
   .ce_ct_teaserBox {
     width: 100%;
-    //min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,6 +441,14 @@ ul {
 
   .mod_article.fullwidth.intro {
     padding: 100px 0;
+
+    &.image-overflow {
+      padding-bottom: 0;
+    }
+
+    &.left-image, &.right-image {
+      padding: 100px 50px;
+    }
   }
 
 }
@@ -459,33 +481,58 @@ ul {
   }
 
   header {
-    padding: 20px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
   }
 
-  .intro .ce_ct_teaserBox {
-    h1 a {
-      font-size: 40px;
+  .intro {
+    &.left-image .ce_image {
+      padding-right: 0;
     }
 
-    .inside {
-      padding: 100px 20px 30px;
+    &.right-image .ce_image {
+      padding-left: 0;
     }
 
-    p {
-      font-size: 24px;
+    &.left-image, &.right-image {
+      .ce_ct_teaserBox .inside {
+        padding: 30px 20px 30px;
+      }
     }
-  }
 
-  .intro>.ce_image:first-child {
-    padding: 150px 0 0;
+    >.ce_image:first-child {
+      padding: 150px 0 0;
 
-    + .ce_ct_teaserBox .inside {
-      padding: 30px 20px 30px;
+      + .ce_ct_teaserBox .inside {
+        padding: 30px 20px 30px;
+      }
+    }
+
+    .ce_ct_teaserBox {
+      h1 a {
+        font-size: 40px;
+      }
+
+      .inside {
+        padding: 100px 20px 30px;
+      }
+
+      p {
+        font-size: 24px;
+      }
     }
   }
 
   .mod_article.fullwidth.intro {
     padding: 0;
+  }
+
+  .mod_article.fullwidth.intro {
+    &.left-image, &.right-image {
+      padding: 100px 0;
+      flex-wrap: wrap;
+    }
   }
 
 }
@@ -512,6 +559,10 @@ ul {
 
   h2 {
     font-size: 30px;
+  }
+
+  .intro.image-overflow {
+    margin-bottom: 150px;
   }
 
   .mod_article {
