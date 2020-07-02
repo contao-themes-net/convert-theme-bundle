@@ -1,22 +1,5 @@
-$body-font-family: "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI";
-
 $primary-color: #50E953;
-
-$dark-color: #303742;
-$light-color: #fff;
-
-$body-bg: $light-color;
-$body-font-color: #58595B;
 $link-color: #3A9DDE;
 $link-color-dark: darken($link-color, 10%);
-
-$footer-background_1: #58595B;
-$footer-color-1: #F2F2F2;
-$article-width: 1180px;
-$article-padding: 60px 20px;
-$border-radius: 6px;
-
 $button-background: transparent linear-gradient(90deg, #3A9DDE 0%, $primary-color 100%) 0% 0% no-repeat padding-box;
-$button-color: $light-color;
 $button-background-hover: transparent linear-gradient(90deg, darken(#3A9DDE, 10%) 0%, darken($primary-color, 10%) 100%) 0% 0% no-repeat padding-box;
-$button-color-hover: $button-color;

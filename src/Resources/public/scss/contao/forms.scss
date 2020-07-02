@@ -37,26 +37,26 @@ form.contact-form {
 .form-label {
   font-weight: 700;
   padding: 0 0 3px;
-  color: #202124;
+  color: $body-font-color;
 }
 
 .form-input {
   height: 50px;
-  border: 2px solid #EBEDED;
+  border: 2px solid $border-color-dark;
 
   &:focus {
-    border: 2px solid #EBEDED;
+    border: 2px solid $border-color-dark;
     box-shadow: none;
   }
 }
 
 .form-select {
   height: 50px;
-  border: 2px solid #EBEDED;
+  border: 2px solid $border-color-dark;
   color: #A6ADB4;
 
   &:focus {
-    border: 2px solid #EBEDED;
+    border: 2px solid $border-color-dark;
     box-shadow: none;
   }
 }

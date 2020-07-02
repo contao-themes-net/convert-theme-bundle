@@ -127,5 +127,7 @@ $button-background: $primary-color !default;
 $button-color: $light-color !default;
 $button-background-hover: $primary-color-dark !default;
 $button-color-hover: $button-color !default;
+$boxes-background: $light-color !default;
+$boxes-color: #A6A6A6 !default;
 
 @import '../../../../files/convert/scss/_custom_variables.scss';
