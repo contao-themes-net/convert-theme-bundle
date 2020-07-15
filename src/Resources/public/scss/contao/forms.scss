@@ -25,7 +25,7 @@ form.contact-form {
     @extend .form-label;
   }
 
-  input {
+  input, textarea {
     @extend .form-input;
   }
 
@@ -50,6 +50,10 @@ form.contact-form {
   }
 }
 
+textarea.form-input {
+  height: 150px;
+}
+
 .form-select {
   height: 50px;
   border: 2px solid $border-color-dark;
@@ -58,6 +62,12 @@ form.contact-form {
   &:focus {
     border: 2px solid $border-color-dark;
     box-shadow: none;
+  }
+}
+
+.radio_container, .checkbox_container {
+  span {
+    padding-right: 15px;
   }
 }
 
