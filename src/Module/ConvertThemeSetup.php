@@ -4,7 +4,7 @@ namespace ContaoThemesNet\ConvertThemeBundle\Module;
 
 class ConvertThemeSetup extends \BackendModule
 {
-    const VERSION = '1.3.3';
+    const VERSION = '1.3.4';
 
     protected $strTemplate = 'be_converttheme_setup';
 

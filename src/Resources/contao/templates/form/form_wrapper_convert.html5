@@ -24,3 +24,5 @@
 <!-- indexer::continue -->
 <?php $GLOBALS['CONVERT_STYLES'][] = '_forms'; ?>
 <?php $GLOBALS['CONVERT_STYLES'][] = 'contao/forms'; ?>
+<?php $GLOBALS['CONVERT_STYLES'][] = '_buttons'; ?>
+<?php $GLOBALS['CONVERT_STYLES'][] = 'contao/buttons'; ?>
