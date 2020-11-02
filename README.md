@@ -51,3 +51,33 @@ Compatible with Contao >=4.4
 | [![NATURE Theme](https://contao-themes.net/assets/images/6/00_00_naturetheme-605a9391.jpg)](https://contao-themes.net/theme-detail/nature.html) | ![](https://contao-themes.net/files/contao-themes-net/screenshots/platzhalter.jpg) | ![](https://contao-themes.net/files/contao-themes-net/screenshots/platzhalter.jpg) |
 |:---:|:---:|:---:|
 | [**NATURE Theme**](https://contao-themes.net/theme-detail/nature.html) |  |  |
+
+## Bildnachweise
+
+Landingpage Demo:
+* Screenshot CONVERT Theme Demo / CONVERT_Contao_Theme_verkaufsstarke_Landingpages_in_kuerzester_Zeit_erstellen.jpg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Teaserbild - Landingpage effizient erstellen / CONVERT_Landingpage_Theme_effizient_erstellen.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Teaserbild - Landingpage einfach erstellen / CONVERT_Landingpage_Theme_einfach_erstellen.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Teaserbild - Landingpage rentabel erstellen / CONVERT_Landingpage_Theme_rentabel_erstellen.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* CONVERT Theme Logo schwarz / CONVERT_Logo_black.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* CONVERT Theme Logo weiß / CONVERT_Logo_white.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Check Icon in grün / Icon_check.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Check Icon mit grünem Rahmen / Icon_check_outline.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Info Icon in orange / Icon_info.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Info Icon mit orangenem Rahmen / Icon_info_outline.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Großes Startbild (Wald) / MVIMG_20190227_140359_2.jpg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Trust Siegel 0.1 Theme / trust-siegel-0.1-contao-theme.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Trust Siegel Contao Themes / trust-siegel-contao-themes.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Trust Siegel Contao Partner / trust-siegel-contao_official-partner.svg: [Contao](https://contao.org/de/)
+* pdir Logo / trust-siegel-pdir_logo.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Trust Siegel Schnell Responsive Verkaufsstark / trust-siegel-schnell-responsive-verkaufsstark.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Großes Startbild (Brücke über Wasser mit Wald) in APP-Demo / app-hero-image.jpg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* App Store Button in APP-Demo / app-store-badge@2x.png: public domain
+* App Logo in APP-Demo / APP Logo.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* App Screen in APP-Demo / App screen intro@2x - Kopie (2).png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* App Screen in APP-Demo / App screen intro@2x - Kopie.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* App Screen in APP-Demo / App screen intro@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* Google Play Store Button in APP-Demo / google-play-badge@2x.png: public domain
+* App Teaser 1 in APP-Demo / Image-1@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* App Teaser 2 in APP-Demo / Image-2@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+* App Teaser 3 in APP-Demo / Image@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
