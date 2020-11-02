@@ -54,7 +54,6 @@ Compatible with Contao >=4.4
 
 ## Bildnachweise
 
-Landingpage Demo:
 * Screenshot CONVERT Theme Demo / CONVERT_Contao_Theme_verkaufsstarke_Landingpages_in_kuerzester_Zeit_erstellen.jpg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
 * Teaserbild - Landingpage effizient erstellen / CONVERT_Landingpage_Theme_effizient_erstellen.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
 * Teaserbild - Landingpage einfach erstellen / CONVERT_Landingpage_Theme_einfach_erstellen.svg: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
