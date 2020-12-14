@@ -13,22 +13,30 @@ array_insert($GLOBALS['TL_CTE'], 1, ['convertTheme' => []]);
  * Available tags for Zero One Theme
  */
 
-array_push($GLOBALS['tl_config']['theme_tags'], '-');
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert01/01';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert01/02';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert01/03';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert01/04';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert01/05';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert02/01';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert02/02';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert02/03';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert02/04';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert02/05';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert03/01';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert03/02';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert03/03';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert03/04';
-$GLOBALS['tl_config']['theme_tags'][] = 'Convert03/05';
+if (empty($GLOBALS['tl_config']['theme_tags'])) {
+    $GLOBALS['tl_config']['theme_tags'] = [];
+    $GLOBALS['tl_config']['theme_tags'][] = '-';
+}
+
+if (!empty($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) {
+    $GLOBALS['tl_config']['theme_tags'] = array_merge($GLOBALS['tl_config']['theme_tags'], [
+        'Convert01/01',
+        'Convert01/02',
+        'Convert01/03',
+        'Convert01/04',
+        'Convert01/05',
+        'Convert02/01',
+        'Convert02/02',
+        'Convert02/03',
+        'Convert02/04',
+        'Convert02/05',
+        'Convert03/01',
+        'Convert03/02',
+        'Convert03/03',
+        'Convert03/04',
+        'Convert03/05'
+    ]);
+}
 
 /**
  * Wrapper elements
