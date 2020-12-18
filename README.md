@@ -80,3 +80,5 @@ Compatible with Contao >=4.4
 * App Teaser 1 in APP-Demo / Image-1@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
 * App Teaser 2 in APP-Demo / Image-2@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
 * App Teaser 3 in APP-Demo / Image@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
+
+Alle Demo-Inhalte dieses Themes, insbesondere Texte, Fotografien und Grafiken, sind urheberrechtlich geschützt. Das Urheberrecht liegt bei der pdir Gmbh bzw. den jeweiligen Urhebern der Werke. Bitte fragen Sie uns, falls Sie die Demo-Inhalte dieses Themes verwenden möchten. Ohne schriftliche Genehmigung seitens der Urheber dürfen diese in keiner Form verwendet, vervielfältigt oder verbreitet werden.
