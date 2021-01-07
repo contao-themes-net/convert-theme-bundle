@@ -3,6 +3,9 @@
  ****
  */
 
+// Die folgende Zeile nicht entfernen oder auskommentieren!
+$scssPath: "../../../vendor/contao-themes-net/convert-theme-bundle/src/Resources/public/scss";
+
 /*
  * Entfernen Sie die Schrägstriche um die Theme-Farben zu überschreiben.
  * Uncomment lines to override theme colors.
@@ -12,14 +15,14 @@
 /*        Colour Schemes         */
 /* ============================= */
 
-//@import '/colour_schemes/dark';
-//@import '/colour_schemes/green_blue';
+//@import '#{$scssPath}/colour_schemes/dark';
+//@import '#{$scssPath}/colour_schemes/green_blue';
 
 /* ============================= */
 /*          Dark Mode            */
 /* ============================= */
 
-@import '/colour_schemes/dark_mode';
+@import '#{$scssPath}/colour_schemes/dark_mode';
 
 /* ============================= */
 /*    CONVERT Theme Variables    */
