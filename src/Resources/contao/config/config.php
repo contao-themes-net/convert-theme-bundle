@@ -18,7 +18,7 @@ if (!isset($GLOBALS['tl_config']['theme_tags'])) {
     $GLOBALS['tl_config']['theme_tags'][] = '-';
 }
 
-if (!isset($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) {
+if (isset($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) {
     $GLOBALS['tl_config']['theme_tags'] = array_merge($GLOBALS['tl_config']['theme_tags'], [
         'Convert01/01',
         'Convert01/02',
