@@ -13,12 +13,12 @@ array_insert($GLOBALS['TL_CTE'], 1, ['convertTheme' => []]);
  * Available tags for Zero One Theme
  */
 
-if (empty($GLOBALS['tl_config']['theme_tags'])) {
+if (!isset($GLOBALS['tl_config']['theme_tags'])) {
     $GLOBALS['tl_config']['theme_tags'] = [];
     $GLOBALS['tl_config']['theme_tags'][] = '-';
 }
 
-if (!empty($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) {
+if (isset($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) {
     $GLOBALS['tl_config']['theme_tags'] = array_merge($GLOBALS['tl_config']['theme_tags'], [
         'Convert01/01',
         'Convert01/02',
@@ -49,8 +49,9 @@ $GLOBALS['TL_WRAPPERS']['stop'][] = 'tabsStopElement';
  * Load default styles for every page
  */
 
-if($GLOBALS['CONVERT_STYLES'])
+if (!isset($GLOBALS['CONVERT_STYLES'])) {
     $GLOBALS['CONVERT_STYLES'] = [];
+}
 
 $GLOBALS['CONVERT_STYLES'][] = 'variables';
 $GLOBALS['CONVERT_STYLES'][] = 'mixins';
@@ -62,12 +63,10 @@ $GLOBALS['CONVERT_STYLES'][] = 'utilities';
 /**
  * Backend Modules
  */
-array_insert($GLOBALS['BE_MOD']['contaoThemesNet'], 1, array
-(
-    'convertThemeSetup' => array
-    (
+array_insert($GLOBALS['BE_MOD']['contaoThemesNet'], 1, [
+    'convertThemeSetup' => [
         'callback'          => 'ContaoThemesNet\\ConvertThemeBundle\\Module\\ConvertThemeSetup',
-        'tables'            => array(),
+        'tables'            => [],
         'stylesheet'		=> 'bundles/contaothemesnetconverttheme/scss/backend.css'
-    ),
-));
+    ],
+]);
