@@ -48,7 +48,7 @@ Compatible with Contao >=4.4
 |:---:|:---:|:---:|
 | [**MATE Theme**](https://contao-themes.net/theme-detail/mate.html)  | [**0.1 Theme**](https://contao-themes.net/theme-detail/zeroone.html)  | [**ODD Theme**](https://contao-themes.net/theme-detail/odd.html)  |
 
-| [![NATURE Theme](https://contao-themes.net/assets/images/6/00_00_naturetheme-605a9391.jpg)](https://contao-themes.net/theme-detail/nature.html) | [![MATE Isotope](https://contao-themes.net/assets/images/a/01_mate-isotope-shop-theme_quadrat-afa8f36f.jpg)](https://contao-themes.net/theme-detail/mate-isotope.html) | [![0.1 Isotope](https://contao-themes.net/assets/images/f/0.1_Isotope_00-964697c5.png)](https://contao-themes.net/theme-detail/zeroone-isotope.html) |
+| [![NATURE Theme](https://contao-themes.net/assets/images/6/00_00_naturetheme-605a9391.jpg)](https://contao-themes.net/theme-detail/nature.html) | [![MATE Isotope](https://contao-themes.net/assets/images/a/01_mate-isotope-shop-theme_quadrat-afa8f36f.jpg)](https://contao-themes.net/theme-detail/mate-isotope.html) | [![0.1 Isotope](https://contao-themes.net/assets/images/5/0.1_Isotope_00-57e3b5b2.jpg)](https://contao-themes.net/theme-detail/zeroone-isotope.html) |
 |:---:|:---:|:---:|
 | [**NATURE Theme**](https://contao-themes.net/theme-detail/nature.html) |  [**MATE Isotope**](https://contao-themes.net/theme-detail/mate-isotope.html) | [**0.1 Isotope**](https://contao-themes.net/theme-detail/zeroone-isotope.html) |
 
