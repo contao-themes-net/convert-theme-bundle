@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.7.0](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.0) – 2022-02-15
+
+- [feature] add sql files for contao 4.13
+
 ## [1.6.0](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.6.0) – 2021-08-25
 
 - [feature] add sql files for contao 4.12
