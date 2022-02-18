@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.7.1](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.1) – 2022-02-18
+
+- [fix] update fe_page template
+
 ## [1.7.0](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.0) – 2022-02-15
 
 - [feature] add sql files for contao 4.13
