@@ -2,6 +2,7 @@
 
 namespace ContaoThemesNet\ConvertThemeBundle;
 
+use Contao\File;
 use Contao\System;
 use Contao\StringUtil;
 
