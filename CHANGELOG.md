@@ -1,8 +1,9 @@
 # Changelog
 
-## [1.7.1](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.1) – 2022-02-18
+## [1.7.1](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.1) – 2022-03-07
 
 - [fix] update fe_page template
+- [fix] add support for Symfony 5 public entry point
 
 ## [1.7.0](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.0) – 2022-02-15
 
