@@ -24,27 +24,7 @@
 
   <link rel="shortcut icon" href="files/convert/img/favicon.ico" type="image/x-icon"/>
 
-  <?php // @todo write class for this funtions
-    $scssStr = '';
-    $hash = hash('ripemd160', implode(" ,",$GLOBALS['CONVERT_STYLES']));
-    $file = new \File('var/cache/convert/scss/' . $hash . '.scss');
-
-    // add convert to end of array
-    $GLOBALS['CONVERT_STYLES'][] = '_convert';
-    $GLOBALS['CONVERT_STYLES'] = array_unique($GLOBALS['CONVERT_STYLES']);
-
-    foreach($GLOBALS['CONVERT_STYLES'] as $style) {
-      $scssStr .= '@import "../../../../web/bundles/contaothemesnetconverttheme/scss/' . $style . '.scss";' . "\n";
-    }
-    \File::putContent($file->path, $scssStr);
-
-  ?>
-
-  <link rel="stylesheet" type="text/css" media="all" href="<?php
-            // add stylesheets
-            $combiner = new Combiner();
-            $combiner->add($file->path);
-            echo $combiner->getCombinedFile(); ?>">
+  <?php ContaoThemesNet\ConvertThemeBundle\ThemeUtils::getCombinedStylesheet() //convert theme css optimization ?>
 
   <?= $this->head ?>
 <?php $this->endblock(); ?>

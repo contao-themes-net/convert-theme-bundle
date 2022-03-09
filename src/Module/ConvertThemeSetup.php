@@ -2,6 +2,8 @@
 
 namespace ContaoThemesNet\ConvertThemeBundle\Module;
 
+use ContaoThemesNet\ConvertThemeBundle\ThemeUtils;
+
 class ConvertThemeSetup extends \BackendModule
 {
     const VERSION = '1.7.1';
@@ -16,12 +18,14 @@ class ConvertThemeSetup extends \BackendModule
         switch (\Input::get('act')) {
             case 'syncFolder':
                 $this->Template->version = ConvertThemeSetup::VERSION;
-                $path = TL_ROOT . '/web/bundles/contaothemesnetconverttheme';
+                $path = sprintf('%s/%s/bundles/contaothemesnetconverttheme',
+                    ThemeUtils::getRootDir(),
+                    ThemeUtils::getWebDir());
                 if(!file_exists("files/convert")) {
                     new \Folder("files/convert");
                 }
                 $this->getFiles($path);
-                $this->getSqlFiles($path = TL_ROOT . "/vendor/contao-themes-net/convert-theme-bundle/src/templates");
+                $this->getSqlFiles(ThemeUtils::getRootDir() . "/vendor/contao-themes-net/convert-theme-bundle/src/templates");
                 $this->Template->message = true;
                 break;
             case 'truncateTlFiles':
@@ -42,13 +46,13 @@ class ConvertThemeSetup extends \BackendModule
                 $filesFolder = "files/convert".str_replace("contaothemesnetconverttheme","",substr($path,$pos))."/".$dir;
 
                 if($dir == "_custom_variables.scss" || $dir == "custom.scss") {
-                    if(!file_exists(TL_ROOT."/".$filesFolder)) {
-                        $objFile = new \File("web/bundles/".substr($path,$pos)."/".$dir, true);
+                    if(!file_exists(ThemeUtils::getRootDir()."/".$filesFolder)) {
+                        $objFile = new \File(ThemeUtils::getWebDir()."/bundles/".substr($path,$pos)."/".$dir, true);
                         $objFile->copyTo($filesFolder);
                     }
                 } else if(strpos($filesFolder,"/img/") !== false || strpos($filesFolder,"/css/") !== false || strpos($filesFolder,".public") !== false) {
-                    if(!file_exists(TL_ROOT."/".$filesFolder)) {
-                        $objFile = new \File("web/bundles/".substr($path,$pos)."/".$dir, true);
+                    if(!file_exists(ThemeUtils::getRootDir()."/".$filesFolder)) {
+                        $objFile = new \File(ThemeUtils::getWebDir()."/bundles/".substr($path,$pos)."/".$dir, true);
                         $objFile->copyTo($filesFolder);
                     }
                 }
