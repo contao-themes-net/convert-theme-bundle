@@ -6,7 +6,7 @@ use ContaoThemesNet\ConvertThemeBundle\ThemeUtils;
 
 class ConvertThemeSetup extends \BackendModule
 {
-    const VERSION = '1.7.1';
+    const VERSION = '1.7.2';
 
     protected $strTemplate = 'be_converttheme_setup';
 
