@@ -1,24 +1,22 @@
 <?php
 
-// Insert the zero one theme category
-array_insert($GLOBALS['TL_CTE'], 1, ['convertTheme' => []]);
+use Contao\ArrayUtil;
+
+// Insert the convert theme category
+ArrayUtil::arrayInsert($GLOBALS['TL_CTE'], 1, ['convertTheme' => []]);
 
 /**
- * Add content elements
+ * Available tags for Convert Theme
  */
 
-
-
-/**
- * Available tags for Zero One Theme
- */
-
-if (!isset($GLOBALS['tl_config']['theme_tags'])) {
+if (empty($GLOBALS['tl_config']['theme_tags'])) 
+{
     $GLOBALS['tl_config']['theme_tags'] = [];
     $GLOBALS['tl_config']['theme_tags'][] = '-';
 }
 
-if (isset($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) {
+if (!empty($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config']['theme_tags'])) 
+{
     $GLOBALS['tl_config']['theme_tags'] = array_merge($GLOBALS['tl_config']['theme_tags'], [
         'Convert01/01',
         'Convert01/02',
@@ -39,13 +37,6 @@ if (isset($GLOBALS['tl_config']['theme_tags']) && \is_array($GLOBALS['tl_config'
 }
 
 /**
- * Wrapper elements
- */
-
-$GLOBALS['TL_WRAPPERS']['start'][] = 'tabsStartElement';
-$GLOBALS['TL_WRAPPERS']['stop'][] = 'tabsStopElement';
-
-/**
  * Load default styles for every page
  */
 
@@ -63,10 +54,11 @@ $GLOBALS['CONVERT_STYLES'][] = 'utilities';
 /**
  * Backend Modules
  */
-array_insert($GLOBALS['BE_MOD']['contaoThemesNet'], 1, [
+
+ArrayUtil::arrayInsert($GLOBALS['BE_MOD']['contaoThemesNet'], 1, [
     'convertThemeSetup' => [
         'callback'          => 'ContaoThemesNet\\ConvertThemeBundle\\Module\\ConvertThemeSetup',
         'tables'            => [],
-        'stylesheet'		=> 'bundles/contaothemesnetconverttheme/scss/backend.css'
+        'stylesheet'        => 'bundles/contaothemesnetconverttheme/scss/backend.css'
     ],
 ]);

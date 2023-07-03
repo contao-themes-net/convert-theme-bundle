@@ -17,7 +17,7 @@ class ContaoThemesNetConvertThemeExtension extends Extension implements PrependE
     {
         $loader = new YamlFileLoader(
             $container,
-            new FileLocator(__DIR__ . '/../Resources/config')
+            new FileLocator(__DIR__.'/../../config')
         );
 
         $loader->load('services.yml');
@@ -25,10 +25,10 @@ class ContaoThemesNetConvertThemeExtension extends Extension implements PrependE
 
     public function prepend(ContainerBuilder $container)
     {
-        $container->loadFromExtension('twig', array(
-            'paths' => array(
-                '%kernel.project_dir%/vendor/contao-themes-net/convert-theme-bundle/src/Resources/ContaoCoreBundle/views/' => 'ContaoCore',
-            ),
-        ));
+        $container->loadFromExtension('twig', [
+            'paths' => [
+                '%kernel.project_dir%/vendor/contao-themes-net/convert-theme-bundle/templates/bundles/ContaoCoreBundle/views/' => 'ContaoCore',
+            ],
+        ]);
     }
 }

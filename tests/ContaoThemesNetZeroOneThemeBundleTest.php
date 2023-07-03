@@ -1,0 +1,32 @@
+<?php
+
+declare(strict_types=1);
+
+/*
+ * convert theme for Contao Open Source CMS
+ *
+ * Copyright (C) 2023 pdir / digital agentur // pdir GmbH
+ *
+ * @package    contao-themes-net/convert-theme-bundle
+ * @link       https://github.com/contao-themes-net/convert-theme-bundle
+ * @license    pdir contao theme licence
+ * @author     Mathias Arzberger <develop@pdir.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace ContaoThemesNet\ConvertThemeBundle\Tests;
+
+use ContaoThemesNet\ZeroOneThemeBundle\ContaoThemesNetZeroOneThemeBundle;
+use PHPUnit\Framework\TestCase;
+
+class ContaoThemesNetConvertThemeBundleTest extends TestCase
+{
+    public function testCanBeInstantiated(): void
+    {
+        $bundle = new ContaoThemesNetConvertThemeBundle();
+
+        $this->assertInstanceOf('ContaoThemesNet\ConvertThemeBundle\ContaoThemesNetConvertThemeBundle', $bundle);
+    }
+}

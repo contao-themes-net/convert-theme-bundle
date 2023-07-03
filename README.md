@@ -32,7 +32,7 @@ For documentation please visit https://pdir.de/docs/de/contao/themes/convert/
 
 ## Compatible
 
-Compatible with Contao >=4.4
+Compatible with Contao 5
 
 ## dependencies
 
