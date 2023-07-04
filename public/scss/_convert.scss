@@ -201,6 +201,48 @@ img {
   }
 }
 
+.media.content-text {
+  display: block;
+
+  &.media--left figure {
+    margin: 0 50px 50px 0;
+  }
+
+  &.media--right figure {
+    margin: 0 0 50px 50px;
+  }
+
+  &.media--below {
+    display: flex;
+    flex-wrap: wrap;
+
+    figure {
+      order: 2;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 10px;
+    }
+
+    .rte {
+      order: 1;
+    }
+  }
+
+  &.text-center figure {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.media--right > figure {
+  float: right;
+}
+
+.media--left > figure {
+  float: right;
+}
+
 .mod_article {
   max-width: $article-width;
   padding: $article-padding;
@@ -570,5 +612,3 @@ ul {
   }
 
 }
-
-@import '../../../../files/convert/scss/custom';

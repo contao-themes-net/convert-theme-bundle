@@ -1,13 +1,3 @@
-<?php
-if( strpos( $_SERVER['HTTP_ACCEPT'], 'image/webp' ) !== false ) {
-	$bgImage = str_replace([".jpg",".png"],".webp",$this->singleSRC);
-$file = \FilesModel::findByPath($bgImage);
-if($file === null) $bgImage = $this->singleSRC;
-} else {
-$bgImage = $this->singleSRC;
-}
-?>
-
 <div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
     <div class="image">
         <div><?php $this->insert('image', $this->arrData); ?></div>
@@ -37,10 +27,3 @@ $bgImage = $this->singleSRC;
 
 <?php $GLOBALS['CONVERT_STYLES'][] = '_buttons'; ?>
 <?php $GLOBALS['CONVERT_STYLES'][] = 'contao/buttons'; ?>
-
-<?php $GLOBALS['TL_BODY'][] = '
-<script>
-if( document.querySelector(".intro .ce_ct_teaserBox + .ce_image") !== null ) {
-    document.querySelector(".intro")
-}
-</script>'; ?>

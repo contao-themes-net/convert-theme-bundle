@@ -11,6 +11,10 @@ use Symfony\Component\Filesystem\Path;
 
 class ThemeUtils
 {
+    public static string $filesFolder = 'files/convert';
+    public static string $themeFolder = 'contaothemesnetconverttheme';
+    public static string $scssFolder = 'scss/';
+
     public static function getRootDir() {
         return System::getContainer()->getParameter('kernel.project_dir');
     }
@@ -22,7 +26,7 @@ class ThemeUtils
     /**
      * @throws InvalidResourceException
      */
-    public static function getCombinedStylesheet() {
+    public static function getCombinedStylesheet(null|bool|string $theme = null): void {
         if (!file_exists(Path::join(self::getRootDir(), self::$filesFolder))) {
             throw new InvalidResourceException('Theme folder does not exists - Please run migrations first!');
         }
@@ -41,7 +45,7 @@ class ThemeUtils
 
         if (!$objFile->exists()) {
             // add 0.1 to end of array
-            $GLOBALS['CONVERT_STYLES'][] = '_0.1';
+            $GLOBALS['CONVERT_STYLES'][] = '_convert';
             $GLOBALS['CONVERT_STYLES'] = array_unique($GLOBALS['CONVERT_STYLES']);
 
             $scssStr .= "@import \"_custom_variables.scss\";\n";
