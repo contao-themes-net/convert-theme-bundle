@@ -48,7 +48,13 @@ class ThemeUtils
             $GLOBALS['CONVERT_STYLES'][] = '_convert';
             $GLOBALS['CONVERT_STYLES'] = array_unique($GLOBALS['CONVERT_STYLES']);
 
-            $scssStr .= "@import \"_custom_variables.scss\";\n";
+            if (null === $theme) {
+                $scssStr .= "@import '_custom_variables.scss';\n";
+            }
+
+            if (null !== $theme) {
+                $scssStr .= "@import '".$theme."/_custom_variables.scss';\n";
+            }
 
             foreach ($GLOBALS['CONVERT_STYLES'] as $style) {
                 $scssStr .= sprintf(
@@ -73,7 +79,13 @@ class ThemeUtils
             }
 
             // add custom
-            $scssStr .= "@import \"custom.scss\";\n";
+            if (null === $theme) {
+                $scssStr .= "@import 'custom.scss';\n";
+            }
+
+            if (null !== $theme) {
+                $scssStr .= "@import '".$theme."/custom.scss';\n";
+            }
 
             $objFile->write($scssStr);
             $objFile->close();
@@ -81,11 +93,6 @@ class ThemeUtils
 
         if ($objFile->exists()) {
             $scssStr = $objFile->getContent();
-        }
-
-        // for multi domain setup
-        if (null !== $theme) {
-            self::$scssFolder .= 'files/convert/scss/'.$theme.'/';
         }
 
         $compiler = new Compiler();

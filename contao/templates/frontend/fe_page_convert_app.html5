@@ -22,7 +22,7 @@
   <?php if(isset($GLOBALS['og:image:width'])) echo '<meta property="og:image:width" content="'.$GLOBALS['og:image:width'].'" />'; ?>
   <?php if(isset($GLOBALS['og:image:height'])) echo '<meta property="og:image:height" content="'.$GLOBALS['og:image:height'].'" />'; ?>
 
-  <?php ContaoThemesNet\ConvertThemeBundle\ThemeUtils::getCombinedStylesheet() //convert theme css optimization ?>
+  <?php ContaoThemesNet\ConvertThemeBundle\ThemeUtils::getCombinedStylesheet('appDemo') //convert theme css optimization ?>
 
   <?= $this->head ?>
 <?php $this->endblock(); ?>

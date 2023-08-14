@@ -9,6 +9,10 @@ figure {
   margin:0;
 }
 
+#wrapper {
+  overflow: hidden;
+}
+
 a:focus {
   box-shadow: none;
 }
@@ -340,11 +344,11 @@ ul {
   justify-content: center;
 
   &.right-image {
-    .ce_ct_teaserBox, .ce_image {
+    .ce_ct_teaserBox, .content-image {
       width: inherit;
     }
 
-    .ce_image {
+    .content-image {
       padding-left: 50px;
     }
   }
@@ -352,11 +356,11 @@ ul {
   &.left-image {
     flex-direction: row-reverse;
 
-    .ce_ct_teaserBox, .ce_image {
+    .ce_ct_teaserBox, .content-image {
       width: inherit;
     }
 
-    .ce_image {
+    .content-image {
       padding-right: 50px;
     }
   }
@@ -364,12 +368,12 @@ ul {
   &.image-overflow {
     margin-bottom: 100px;
 
-    > .ce_image {
+    > .content-image {
       margin-bottom: -200px;
     }
   }
 
-  > .ce_image {
+  > .content-image {
     width: 100%;
     padding-bottom: 50px;
     text-align: center;
@@ -529,11 +533,11 @@ ul {
   }
 
   .intro {
-    &.left-image .ce_image {
+    &.left-image .content-image {
       padding-right: 0;
     }
 
-    &.right-image .ce_image {
+    &.right-image .content-image {
       padding-left: 0;
     }
 
@@ -543,7 +547,7 @@ ul {
       }
     }
 
-    >.ce_image:first-child {
+    >.content-image:first-child {
       padding: 150px 0 0;
 
       + .ce_ct_teaserBox .inside {
