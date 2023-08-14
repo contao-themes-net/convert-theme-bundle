@@ -18,6 +18,7 @@ declare(strict_types=1);
 
 namespace ContaoThemesNet\ConvertThemeBundle\Tests;
 
+use ContaoThemesNet\ConvertThemeBundle\ContaoThemesNetConvertThemeBundle;
 use PHPUnit\Framework\TestCase;
 
 class ContaoThemesNetConvertThemeBundleTest extends TestCase

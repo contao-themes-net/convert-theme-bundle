@@ -18,6 +18,7 @@ declare(strict_types=1);
 
 namespace ContaoThemesNet\ConvertThemeBundle\DependencyInjection\Tests;
 
+use ContaoThemesNet\ConvertThemeBundle\DependencyInjection\ContaoThemesNetConvertThemeExtension;
 use PHPUnit\Framework\TestCase;
 
 class ContaoThemesNetConvertThemeExtensionTest extends TestCase
