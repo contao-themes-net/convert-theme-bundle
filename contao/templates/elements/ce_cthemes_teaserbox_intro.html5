@@ -1,0 +1,29 @@
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <div class="image">
+        <div><?php $this->insert('image', $this->arrData); ?></div>
+    </div>
+    <div class="inside">
+        <?php $this->block('content'); ?>
+
+        <?php if ($this->headline): ?>
+            <<?= $this->hl ?>>
+            <?php if($this->page != ""): ?><a href="<?= $this->page ?>"<?= $this->target ?><?= $this->rel ?><?= $this->pageTitle ?>><?php endif; ?>
+            <?= $this->headline ?>
+            <?php if($this->page != ""): ?></a><?php endif; ?>
+            </<?= $this->hl ?>>
+        <?php endif; ?>
+
+        <?= $this->text ?>
+
+        <?php if($this->page != ""): ?>
+            <div class="pageLink">
+                <a href="<?= $this->page ?>" class="btn btn-primary" <?= $this->target ?><?= $this->rel ?><?= $this->pageTitle ?>><?= $this->pageText ?></a>
+            </div>
+        <?php endif; ?>
+
+        <?php $this->endblock(); ?>
+    </div>
+</div>
+
+<?php $GLOBALS['CONVERT_STYLES'][] = '_buttons'; ?>
+<?php $GLOBALS['CONVERT_STYLES'][] = 'contao/buttons'; ?>

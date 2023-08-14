@@ -16,14 +16,17 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace ContaoThemesNet\ConvertThemeBundle;
+namespace ContaoThemesNet\ConvertThemeBundle\DependencyInjection\Tests;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use ContaoThemesNet\ConvertThemeBundle\DependencyInjection\ContaoThemesNetConvertThemeExtension;
+use PHPUnit\Framework\TestCase;
 
-class ContaoThemesNetConvertThemeBundle extends Bundle
+class ContaoThemesNetConvertThemeExtensionTest extends TestCase
 {
-    public function getPath(): string
+    public function testCanBeInstantiated(): void
     {
-        return \dirname(__DIR__);
+        $bundle = new ContaoThemesNetConvertThemeExtension();
+
+        $this->assertInstanceOf('ContaoThemesNet\ConvertThemeBundle\DependencyInjection\ContaoThemesNetConvertThemeExtension', $bundle);
     }
 }

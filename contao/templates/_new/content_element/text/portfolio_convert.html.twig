@@ -1,0 +1,36 @@
+{% extends "@Contao/content_element/text.html.twig" %}
+
+{% block wrapper %}
+  {% set attributes = attrs(attributes|default).addClass(['portfolio']) %}
+  <{% block wrapper_tag %}div{% endblock %}{% block attributes %}{{ attributes }}{% endblock %}>
+    {{ block('content') }}
+  </{{ block('wrapper_tag') }}>
+
+  {% set elementStyles = ['contao/portfolio'] %}
+  {{ elementStyles|addToThemeStyles}}
+{% endblock %}
+
+{% block content %}
+  {# Media #}
+  {% block text_media %}
+    {% if image %}
+      <div class="image">
+        {% with {figure: image} %}{{ block('figure_component') }}{% endwith %}
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {# Richtext #}
+  {% block text %}
+    <div class="text">
+      {% if headline.text %}
+        {{ block('headline_component') }}
+      {% endif %}
+
+      {% set text_attributes = attrs(text_attributes|default).addClass('rte') %}
+      <div{% block text_attributes %}{{ text_attributes }}{% endblock %}>
+        {{ text|insert_tag|raw }}
+      </div>
+    </div>
+  {% endblock %}
+{% endblock %}

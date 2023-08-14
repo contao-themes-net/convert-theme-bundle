@@ -10,6 +10,10 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
+## [2.0.0](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.0) – 2023-08-14
+
+- [Added] Add contao 5 support
+
 ## [1.7.2](https://github.com/contao-themes-net/convert-theme-bundle/tree/1.7.2) – 2022-10-11
 
 - [Changed] now require terminal42/contao-folderpage version 2.* or 3.*

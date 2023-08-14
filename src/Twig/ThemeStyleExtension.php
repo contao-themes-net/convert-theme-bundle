@@ -16,21 +16,25 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace ContaoThemesNet\ConvertThemeBundle\Module;
+namespace ContaoThemesNet\ConvertThemeBundle\Twig;
 
-use Contao\BackendModule;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
-class ConvertThemeSetup extends BackendModule
+class ThemeStyleExtension extends AbstractExtension
 {
-    public const VERSION = '2.0.0';
-
-    protected $strTemplate = 'be_converttheme_setup';
+    public function getFilters(): array
+    {
+        return [
+            new TwigFilter('addToThemeStyles', [$this, 'addStylesToGlobal']),
+        ];
+    }
 
     /**
-     * Generate the module.
+     * @param array<int, string> $styles
      */
-    protected function compile(): void
+    public function addStylesToGlobal(array $styles): void
     {
-        $this->Template->version = self::VERSION;
+        $GLOBALS['CONVERT_STYLES'] = array_merge($GLOBALS['CONVERT_STYLES'], $styles);
     }
 }

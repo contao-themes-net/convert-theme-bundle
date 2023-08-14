@@ -1,11 +1,11 @@
 # CONVERT Contao Theme
 
 With CONVERT you can create sales-boosting landing pages in no time at all because it combines all important elements & rules in one Contao theme. CONVERT was developed on the basis of Contao 4.x and the lightweight CSS framework Spectre for optimal performance and high conversion rates.
- 
+
 The theme is based on current best practice methods for building landing pages with strong conversion potential: It already contains all the important conversion elements (such as hero section, benefits & testimonials), is clearly & designed and built with an absolute focus on the call to action.
- 
+
 CONVERT is also high-performance due to short loading times & lightweight code and of course responsive, i.e. optimized for all devices and common browsers. The theme is ready to use immediately, because it concentrates on important conversion elements (like header image + headline, lists, teaser boxes, quote sliders, buttons & contact form) and delivers them ready-made.
- 
+
 **CONVERT is clever, performant and target-oriented - perfect for high-conversion landing pages that turn prospects into paying customers.**
 
 --- german ---
@@ -32,7 +32,7 @@ For documentation please visit https://pdir.de/docs/de/contao/themes/convert/
 
 ## Compatible
 
-Compatible with Contao >=4.4
+Compatible with Contao 5
 
 ## dependencies
 
@@ -82,3 +82,11 @@ Compatible with Contao >=4.4
 * App Teaser 3 in APP-Demo / Image@2x.png: Eigenaufnahmen@[pdirGmbH](https://pdir.de/)
 
 Alle Demo-Inhalte dieses Themes, insbesondere Texte, Fotografien und Grafiken, sind urheberrechtlich geschützt. Das Urheberrecht liegt bei der pdir Gmbh bzw. den jeweiligen Urhebern der Werke. Bitte fragen Sie uns, falls Sie die Demo-Inhalte dieses Themes verwenden möchten. Ohne schriftliche Genehmigung seitens der Urheber dürfen diese in keiner Form verwendet, vervielfältigt oder verbreitet werden.
+
+
+# DEV
+### run before commit
+
+    vendor/bin/ecs check src tests
+    vendor/bin/phpstan analyse
+    vendor/bin/phpunit --colors=always
