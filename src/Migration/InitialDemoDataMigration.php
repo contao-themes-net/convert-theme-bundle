@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * convert theme for Contao Open Source CMS
+ * CONVERT theme for Contao Open Source CMS
  *
  * Copyright (C) 2023 pdir / digital agentur // pdir GmbH
  *

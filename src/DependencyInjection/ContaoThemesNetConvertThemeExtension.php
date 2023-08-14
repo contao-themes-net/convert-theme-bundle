@@ -1,19 +1,35 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * CONVERT theme for Contao Open Source CMS
+ *
+ * Copyright (C) 2023 pdir / digital agentur // pdir GmbH
+ *
+ * @package    contao-themes-net/convert-theme-bundle
+ * @link       https://github.com/contao-themes-net/convert-theme-bundle
+ * @license    pdir contao theme licence
+ * @author     Mathias Arzberger <develop@pdir.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace ContaoThemesNet\ConvertThemeBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
+use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class ContaoThemesNetConvertThemeExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function load(array $mergedConfig, ContainerBuilder $container)
+    public function load(array $mergedConfig, ContainerBuilder $container): void
     {
         $loader = new YamlFileLoader(
             $container,
@@ -23,7 +39,7 @@ class ContaoThemesNetConvertThemeExtension extends Extension implements PrependE
         $loader->load('services.yml');
     }
 
-    public function prepend(ContainerBuilder $container)
+    public function prepend(ContainerBuilder $container): void
     {
         $container->loadFromExtension('twig', [
             'paths' => [

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * convert theme for Contao Open Source CMS
+ * CONVERT theme for Contao Open Source CMS
  *
  * Copyright (C) 2023 pdir / digital agentur // pdir GmbH
  *
@@ -18,7 +18,6 @@ declare(strict_types=1);
 
 namespace ContaoThemesNet\ConvertThemeBundle\Tests;
 
-use ContaoThemesNet\ZeroOneThemeBundle\ContaoThemesNetZeroOneThemeBundle;
 use PHPUnit\Framework\TestCase;
 
 class ContaoThemesNetConvertThemeBundleTest extends TestCase

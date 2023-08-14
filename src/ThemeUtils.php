@@ -1,5 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * CONVERT theme for Contao Open Source CMS
+ *
+ * Copyright (C) 2023 pdir / digital agentur // pdir GmbH
+ *
+ * @package    contao-themes-net/convert-theme-bundle
+ * @link       https://github.com/contao-themes-net/convert-theme-bundle
+ * @license    pdir contao theme licence
+ * @author     Mathias Arzberger <develop@pdir.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace ContaoThemesNet\ConvertThemeBundle;
 
 use Contao\CoreBundle\Exception\InvalidResourceException;
@@ -15,18 +31,21 @@ class ThemeUtils
     public static string $themeFolder = 'contaothemesnetconverttheme';
     public static string $scssFolder = 'scss/';
 
-    public static function getRootDir() {
+    public static function getRootDir()
+    {
         return System::getContainer()->getParameter('kernel.project_dir');
     }
 
-    public static function getWebDir() {
+    public static function getWebDir()
+    {
         return StringUtil::stripRootDir(System::getContainer()->getParameter('contao.web_dir'));
     }
 
     /**
      * @throws InvalidResourceException
      */
-    public static function getCombinedStylesheet(null|bool|string $theme = null): void {
+    public static function getCombinedStylesheet(null|bool|string $theme = null): void
+    {
         if (!file_exists(Path::join(self::getRootDir(), self::$filesFolder))) {
             throw new InvalidResourceException('Theme folder does not exists - Please run migrations first!');
         }
