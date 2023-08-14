@@ -31,12 +31,12 @@ class ThemeUtils
     public static string $themeFolder = 'contaothemesnetconverttheme';
     public static string $scssFolder = 'scss/';
 
-    public static function getRootDir()
+    public static function getRootDir(): string
     {
         return System::getContainer()->getParameter('kernel.project_dir');
     }
 
-    public static function getWebDir()
+    public static function getWebDir(): string
     {
         return StringUtil::stripRootDir(System::getContainer()->getParameter('contao.web_dir'));
     }
