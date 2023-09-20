@@ -11,7 +11,9 @@
             <li><a href="https://pdir.de/docs/de/contao/themes/convert/" target="_blank"
                    style="text-decoration: underline;">Dokumentation</a></li>
             <li><a href="https://convert.contao-themes.net/" target="_blank"
-                   style="text-decoration: underline;">Demo</a></li>
+                   style="text-decoration: underline;">Demo (Landingpage)</a></li>
+            <li><a href="https://app.convert.contao-themes.net" target="_blank"
+                   style="text-decoration: underline;">Demo (App)</a></li>
             <li><a href="https://contao-themes.net/theme-detail/convert.html" target="_blank"
                    style="text-decoration: underline;">Lizenz erwerben</a></li>
             <li><a href="https://github.com/contao-themes-net/convert-theme-bundle/issues" target="_blank"
