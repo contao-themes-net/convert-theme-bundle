@@ -21,7 +21,7 @@
 }
 
 .be_converttheme_setup img.logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-bottom: 15px;
 }
@@ -32,11 +32,11 @@
 }
 
 .be_converttheme_setup a {
-    color: #000;
+    color: #F37920;
 }
 
 .be_converttheme_setup a:hover {
-    color: #333;
+    color: #ffb700;
 }
 
 .be_converttheme_setup .button a {
@@ -49,4 +49,8 @@
 
 .be_converttheme_setup .button a:hover {
     background: #000 ;
+}
+
+html[data-color-scheme=dark] img.logo {
+    filter: invert(1);
 }
