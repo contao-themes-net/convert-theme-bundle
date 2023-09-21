@@ -10,6 +10,10 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
+## [2.0.1](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.1) – 2023-09-20
+
+- [Fixed] Fix CONVERT Theme setup page
+
 ## [2.0.0](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.0) – 2023-08-14
 
 - [Added] Add contao 5 support
