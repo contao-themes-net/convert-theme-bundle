@@ -10,6 +10,10 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
+## [2.0.2](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.2) – 2023-10-11
+
+- [Fixed] replace InsertTag for request token in form_wrapper template
+
 ## [2.0.1](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.1) – 2023-09-20
 
 - [Fixed] Fix CONVERT Theme setup page
