@@ -22,7 +22,7 @@ use Contao\BackendModule;
 
 class ConvertThemeSetup extends BackendModule
 {
-    public const VERSION = '2.0.2';
+    public const VERSION = '2.0.3';
 
     protected $strTemplate = 'be_converttheme_setup';
 

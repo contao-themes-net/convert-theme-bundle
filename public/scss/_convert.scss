@@ -170,6 +170,7 @@ header {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
 
   &.img-rounded {
     border-radius: 100%;
@@ -209,11 +210,11 @@ img {
   display: block;
 
   &.media--left figure {
-    margin: 0 50px 50px 0;
+    margin: 5px 15px 15px 0;
   }
 
   &.media--right figure {
-    margin: 0 0 50px 50px;
+    margin: 5px 0 15px 15px;
   }
 
   &.media--below {
@@ -244,7 +245,7 @@ img {
 }
 
 .media--left > figure {
-  float: right;
+  float: left;
 }
 
 .mod_article {
@@ -609,6 +610,13 @@ ul {
 
   .intro.image-overflow {
     margin-bottom: 150px;
+  }
+
+  .media.content-text {
+    &.media--left figure, &.media--right figure {
+      float: none;
+      margin: 0 0 15px;
+    }
   }
 
   .mod_article {
