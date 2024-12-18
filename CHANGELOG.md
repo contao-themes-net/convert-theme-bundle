@@ -10,6 +10,10 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
+## [2.0.4](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.4) – 2024-12-18
+
+- [Fixed] Fix file folders migration with minimal installation ([#23](https://github.com/contao-themes-net/convert-theme-bundle/issues/23))
+
 ## [2.0.3](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.3) – 2024-05-15
 
 - [Fixed] Fix text with image element
