@@ -10,6 +10,10 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
+## [2.0.5](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.5) – 2025-03-21
+
+- [Fixed] Updated scssphp dependency to 1.0 for Contao 5.5 compatibility
+
 ## [2.0.4](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.4) – 2024-12-18
 
 - [Fixed] Fix file folders migration with minimal installation ([#23](https://github.com/contao-themes-net/convert-theme-bundle/issues/23))
