@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
  * CONVERT theme for Contao Open Source CMS
  *
- * Copyright (C) 2024 pdir / digital agentur // pdir GmbH
+ * Copyright (C) 2025 pdir / digital agentur // pdir GmbH
  *
  * @package    contao-themes-net/convert-theme-bundle
  * @link       https://github.com/contao-themes-net/convert-theme-bundle
@@ -22,7 +22,7 @@ use Contao\BackendModule;
 
 class ConvertThemeSetup extends BackendModule
 {
-    public const VERSION = '2.0.4';
+    public const VERSION = '2.0.5';
 
     protected $strTemplate = 'be_converttheme_setup';
 
