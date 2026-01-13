@@ -65,7 +65,7 @@
     }
 
     .slider-prev {
-      left: 30px;
+      left: 0;
 
       &:before {
         transform: rotate(180deg);
@@ -73,7 +73,7 @@
     }
 
     .slider-next {
-      right: 60px;
+      right: 30px;
     }
   }
 
@@ -87,17 +87,11 @@
 
   .ce_sliderStart {
     .content-slider {
-      max-width: calc(100% - 120px);
+      max-width: calc(100% - 70px);
     }
 
-    .slider-control {
-      .slider-prev {
-        left: 15px;
-      }
-
-      .slider-next {
-        right: 45px;
-      }
+    p {
+      font-size: 1em;
     }
   }
 
