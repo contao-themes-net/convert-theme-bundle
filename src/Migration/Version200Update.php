@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
  * CONVERT theme for Contao Open Source CMS
  *
- * Copyright (C) 2025 pdir / digital agentur // pdir GmbH
+ * Copyright (C) 2026 pdir / digital agentur // pdir GmbH
  *
  * @package    contao-themes-net/convert-theme-bundle
  * @link       https://github.com/contao-themes-net/convert-theme-bundle
@@ -55,8 +55,8 @@ class Version200Update extends AbstractMigration
             FROM
                 tl_content
             WHERE
-                customTpl = 'ce_text_portfolio' OR 
-                customTpl = 'ce_gallery_convert' OR 
+                customTpl = 'ce_text_portfolio' OR
+                customTpl = 'ce_gallery_convert' OR
                 customTpl = 'ce_hyperlink_button_convert'
         ");
 
