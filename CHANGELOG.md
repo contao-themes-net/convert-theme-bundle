@@ -10,13 +10,17 @@ Types of changes
     Security in case of vulnerabilities.
 )
 
+## [2.0.8](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.8) – 2026-03-06
+
+- [Added] Added SQL files to enable demo import in Contao 5.7
+
 ## [2.0.7](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.7) – 2026-01-13
 
 - [Fixed] Fix mobile CSS issues (intro image aspect ratio, content slider spacing)
 
 ## [2.0.6](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.6) – 2025-09-30
 
-- [Added] Added SQL file to enable demo import in Contao 5.6
+- [Added] Added SQL files to enable demo import in Contao 5.6
 
 ## [2.0.5](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.5) – 2025-03-21
 
