@@ -12,7 +12,7 @@ Types of changes
 
 ## [2.0.8](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.8) – 2026-03-06
 
-- [Added] Added SQL files to enable demo import in Contao 5.7
+- [Changed] Removed `symfony/twig-bundle` from composer.json as it is already included in Contao and caused conflicts with Contao 5.7
 
 ## [2.0.7](https://github.com/contao-themes-net/convert-theme-bundle/tree/2.0.7) – 2026-01-13
 
